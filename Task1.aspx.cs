@@ -23,6 +23,10 @@ namespace IT_AV2
 
         protected void PrikazhiGrad_Click1(object sender, EventArgs e)
         {
+            //ListItem selectedItem = ListaGradovi.SelectedItem;
+            //SelektiranGrad.Text = selectedItem.Text;
+            //Oddalechenost.Text = selectedItem.Value;
+
             ListItemCollection items = ListaGradovi.Items;
             SelektiranGrad.Text = "";
             Oddalechenost.Text = "";
