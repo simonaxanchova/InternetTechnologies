@@ -11,7 +11,7 @@
             <div>
                 Изберете град:
                 <br />
-                <asp:ListBox ID="ListaGradovi" runat="server" Height="69px" Width="95px">
+                <asp:ListBox ID="ListaGradovi" runat="server" Height="69px" Width="95px" SelectionMode="Multiple">
                     <asp:ListItem Value="0">Скопје</asp:ListItem>
                     <asp:ListItem Value="50">Велес</asp:ListItem>
                     <asp:ListItem Value="200">Охрид</asp:ListItem>
