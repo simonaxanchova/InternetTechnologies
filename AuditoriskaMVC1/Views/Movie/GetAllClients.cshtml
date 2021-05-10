@@ -1,0 +1,24 @@
+﻿@model List<AuditoriskaMVC1.Models.Client>
+@{
+    ViewBag.Title = "GetAllClients";
+}
+
+<h3>Clients:</h3>
+
+<ul>
+    @{ 
+        int i = 0;
+        foreach(var client in Model)
+        {
+            <li>
+                    <h4>
+                        <span>@client.NameClient, address: @client.Address</span>
+                        <a href="/Movie/EditClient/@i">Edit</a> |
+                        <a href="/Movie/DeleteClient/@i">Delete</a>
+                    </h4>
+            </li>
+            i++;
+        }
+    }
+</ul>
+

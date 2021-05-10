@@ -1,0 +1,25 @@
+﻿@model List<AuditoriskaMVC1.Models.Movie>
+@{
+    ViewBag.Title = "GetAllMovies";
+}
+
+<h3>Movies:</h3>
+
+<ul>
+    @{ 
+        int i = 0;
+        foreach(var movie in Model)
+        {
+            <li>
+                    <h4>
+                        <img src="@movie.ImageUrl" style="max-width: 150px" />
+                        @Html.ActionLink(movie.Name, "ShowMovie", new { id = i }) |
+                        @Html.ActionLink("Edit", "EditMovie", new { id = i }) |
+                        @Html.ActionLink("Delete", "DeleteMovie", new { id = i })
+                    </h4>
+            </li>
+            i++;
+        }
+    }
+</ul>
+
